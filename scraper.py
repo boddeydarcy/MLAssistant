@@ -74,7 +74,7 @@ def readDataSet():
 	with open("imdbData.csv", "r") as dataSet:
 		reader = csv.DictReader(dataSet)
 		for row in reader:
-			print(row["Series_Title"])
+			print(row["Series_Title"], row["Genre"])
 
 
 def writeToDataBase(filmList, yearList, ratingList):
